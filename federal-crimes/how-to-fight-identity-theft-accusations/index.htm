@@ -1,0 +1,929 @@
+﻿<!doctype html>
+<!--[if IE 8]><!-->
+<html lang="en-US" class="no-js ie8">
+<!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+
+<head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+		<script type="rocketlazyloadscript">
+		(function(a, s, y, n, c, h, i, d, e) {
+			s.className += ' ' + y;
+			h.start = 1 * new Date;
+			h.end = i = function() {
+				s.className = s.className.replace(RegExp(' ?' + y), '')
+			};
+			(a[n] = a[n] || []).hide = h;
+			setTimeout(function() {
+				i();
+				h.end = null
+			}, c);
+			h.timeout = c;
+		})(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+			'GTM-KGPZ3T9': true
+		});
+	</script>
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preload" as="image" href="../../wp-content/themes/manninglaw/library/img/home-slider-1.jpg">
+
+	<link rel="shortcut icon" href="../../wp-content/themes/manninglaw/favicon.png">
+	<meta name="google-site-verification" content="-JuSYI1g66gw5P5rP6mYvs_COe0eRPj9G5XDpa3in3U">
+	<meta name="msvalidate.01" content="0DD4C38E755F2BCFA339495828C0C696">
+	<link data-minify="1" rel="stylesheet" href="../../wp-content/cache/min/1/font-awesome/4.4.0/css/font-awesome.min.css?ver=1763756416">
+	<link data-minify="1" rel="stylesheet" href="../../wp-content/cache/min/1/wp-content/themes/manninglaw/style.css?ver=1763756416" media="screen">
+	
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.0 (Yoast SEO v26.4) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>How to Fight Identity Theft Accusations | Manning Law</title>
+<link data-rocket-prefetch="" href="https://fonts.googleapis.com" rel="dns-prefetch">
+<link data-rocket-preload="" as="style" href="../../css?family=Lato%3A300%2C400%2C700&#038;display=swap" rel="preload">
+<link href="../../css?family=Lato%3A300%2C400%2C700&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript><link rel="stylesheet" href="../../css?family=Lato%3A300%2C400%2C700&#038;display=swap"></noscript><link rel="preload" data-rocket-preload="" as="image" href="../../wp-content/uploads/2019/07/Taylor-Manning-Headshot.jpg" fetchpriority="high">
+	<meta name="description" content="If you’ve been accused of identity theft in North Carolina, consult an experienced criminal defense attorney from Manning Law to help you prepare your case!">
+	<link rel="canonical" href="index.htm">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="How to Fight Identity Theft Accusations">
+	<meta property="og:description" content="If you’ve been accused of identity theft in North Carolina, consult an experienced criminal defense attorney from Manning Law to help you prepare your case!">
+	<meta property="og:url" content="https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/">
+	<meta property="og:site_name" content="Manning Law">
+	<meta property="article:published_time" content="2019-09-30T14:23:59+00:00">
+	<meta property="article:modified_time" content="2025-01-24T04:03:36+00:00">
+	<meta name="author" content="Manning Law Firm">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Manning Law Firm">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="3 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/#article","isPartOf":{"@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/"},"author":{"name":"Manning Law Firm","@id":"https://manninglaw.com/#/schema/person/afafdf1d3c56266be57f72268a3782c1"},"headline":"How to Fight Identity Theft Accusations","datePublished":"2019-09-30T14:23:59+00:00","dateModified":"2025-01-24T04:03:36+00:00","mainEntityOfPage":{"@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/"},"wordCount":475,"publisher":{"@id":"https://manninglaw.com/#organization"},"keywords":["ID Theft","Identity Theft"],"articleSection":["Federal Crimes"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/","url":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/","name":"How to Fight Identity Theft Accusations | Manning Law","isPartOf":{"@id":"https://manninglaw.com/#website"},"datePublished":"2019-09-30T14:23:59+00:00","dateModified":"2025-01-24T04:03:36+00:00","description":"If you’ve been accused of identity theft in North Carolina, consult an experienced criminal defense attorney from Manning Law to help you prepare your case!","breadcrumb":{"@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/"]}]},{"@type":"BreadcrumbList","@id":"https://manninglaw.com/federal-crimes/how-to-fight-identity-theft-accusations/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://manninglaw.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://manninglaw.com/about/blog/"},{"@type":"ListItem","position":3,"name":"How to Fight Identity Theft Accusations"}]},{"@type":"WebSite","@id":"https://manninglaw.com/#website","url":"https://manninglaw.com/","name":"Manning Law","description":"Manning Law Firm | 40+ Years of Experience","publisher":{"@id":"https://manninglaw.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://manninglaw.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://manninglaw.com/#organization","name":"Manning Law Firm, PLLC.","url":"https://manninglaw.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://manninglaw.com/#/schema/logo/image/","url":"https://www.manninglaw.com/wp-content/uploads/2018/08/logo-manning-law.png","contentUrl":"https://www.manninglaw.com/wp-content/uploads/2018/08/logo-manning-law.png","width":901,"height":279,"caption":"Manning Law Firm, PLLC."},"image":{"@id":"https://manninglaw.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://manninglaw.com/#/schema/person/afafdf1d3c56266be57f72268a3782c1","name":"Manning Law Firm"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com'>
+<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all'>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='bones-stylesheet-css' href='../../wp-content/cache/min/1/wp-content/themes/manninglaw/library/css/main.css?ver=1763756416' type='text/css' media='all'>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://manninglaw.com/wp-content/themes/manninglaw/library/js/libs/modernizr.custom.min.js" id="bones-modernizr-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://manninglaw.com/wp-content/cache/min/1/ajax/libs/jquery/2.2.4/jquery.min.js?ver=1763756416" id="jquery-js" data-rocket-defer="" defer=""></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.htm"><link rel="alternate" title="JSON" type="application/json" href="../../wp-json/wp/v2/posts/1027"><link rel='shortlink' href='index.htm?p=1027'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-120?url=https%3A%2F%2Fmanninglaw.com%2Ffederal-crimes%2Fhow-to-fight-identity-theft-accusations%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-121?url=https%3A%2F%2Fmanninglaw.com%2Ffederal-crimes%2Fhow-to-fight-identity-theft-accusations%2F&#038;format=xml">
+<!-- Strategic Analytics Tag Manager -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({"mtm.startTime": (new Date().getTime()), "event": "mtm.Start"});
+var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+g.type="text/javascript"; g.async=true; g.src="https://track.stratanalytics.com/js/container_OVDuyx6h.js"; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Strategic Analytics Tag Manager -->
+
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://manninglaw.com/wp-content/cache/min/1/analytics.js?ver=1763756416" data-key="Z6dvAgxouXrS4gQ3q8Is+Q" async=""></script>
+<link rel="icon" href="../../wp-content/uploads/2024/03/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="../../wp-content/uploads/2024/03/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2024/03/cropped-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://manninglaw.com/wp-content/uploads/2024/03/cropped-favicon-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			#input_1_4.gfield_radio input[type="radio"],
+#input_1_4.gfield_radio label {
+display:none;
+}
+
+.form-review .ginput_container_radio .star-rating {
+    pointer-events: auto;
+    position:static;
+    top: 0;
+    left: 0;
+     transform:none; 
+     display: block;
+    justify-content: center;
+    align-items: center;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=UA-59285659-1"></script>
+	<script type="rocketlazyloadscript">
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-59285659-1', {
+			'optimize_id': 'GTM-KGPZ3T9'
+		});
+		gtag('config', 'AW-979365705');
+	</script>
+
+			<!-- Event snippet for Click to Call conversions -->
+		<script type="rocketlazyloadscript">
+			function gtag_report_conversion(url) {
+				var callback = function() {
+					if (typeof(url) != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					'send_to': 'AW-979365705/6U3eCKnTzWAQyd7_0gM',
+					'event_callback': callback
+				});
+				return false;
+			}
+		</script>
+
+	
+
+<meta name="generator" content="WP Rocket 3.20.1.2" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_desktop"></head>
+
+<body data-rsssl="1" class="wp-singular post-template-default single single-post postid-1027 single-format-standard wp-theme-manninglaw" data-timeonsite="0">
+
+	<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+	<symbol id="icon-email" viewbox="0 0 21 16">
+		<path class="cls-1" d="M112,878v15.984c-0.063.016-20.83,0.023-20.986,0.008l-0.006-.006a0.011,0.011,0,0,1,0-.007q0-7.962,0-15.924c0-.017,0-0.033,0-0.055h21Zm-18.487,1.482-0.013.024c0.032,0.026.066,0.051,0.094,0.08q2.2,2.25,4.405,4.5,1.41,1.44,2.82,2.881a1.127,1.127,0,0,0,.221.182,1.032,1.032,0,0,0,1.2-.158q3.653-3.726,7.316-7.444c0.019-.019.036-0.039,0.062-0.068H93.513ZM93.49,892.51h16.021l-5.281-5.461a0.709,0.709,0,0,1-.058.082q-0.459.468-.919,0.934a2.168,2.168,0,0,1-.215.192,2.4,2.4,0,0,1-1.718.494A2.361,2.361,0,0,1,99.765,888c-0.293-.309-0.595-0.61-0.893-0.914-0.02-.021-0.042-0.041-0.065-0.063Zm-1.009-11.957-0.015.009q0,5.432,0,10.861a0.013,0.013,0,0,0,.005.006l0.013,0,5.295-5.462Zm18.037,10.878,0.02-.009v-3.28q0-3.725,0-7.449a0.008,0.008,0,0,0,0-.006,0.067,0.067,0,0,0-.015-0.006l-5.241,5.33Z" transform="translate(-91 -878)"></path>
+	</symbol>
+	<symbol id="icon-phone" viewbox="0 0 20 20">
+		<path class="cls-1" d="M96,858.667A17.3,17.3,0,0,0,103.333,866l2.445-2.444a0.884,0.884,0,0,1,1.111-.223,11.606,11.606,0,0,0,4,.667A1.049,1.049,0,0,1,112,865.111v3.778A1.049,1.049,0,0,1,110.889,870,18.873,18.873,0,0,1,92,851.111,1.049,1.049,0,0,1,93.111,850H97a1.049,1.049,0,0,1,1.111,1.111,12.582,12.582,0,0,0,.667,4,1.368,1.368,0,0,1-.222,1.111L96,858.667h0Z" transform="translate(-92 -850)"></path>
+	</symbol>
+	<symbol id="icon-location" viewbox="0 0 21 31">
+		<path class="cls-1" d="M91,825.258v-1.822a1.1,1.1,0,0,0,.056-0.2,9.868,9.868,0,0,1,1.02-3.477,10.59,10.59,0,0,1,17.013-2.564,10.147,10.147,0,0,1,1.615,12.08c-2.685,4.682-5.448,9.321-8.174,13.981-0.336.574-.654,1.16-0.98,1.74h-0.062c-0.017-.025-0.037-0.048-0.052-0.075q-4.357-7.429-8.717-14.857a11.642,11.642,0,0,1-1.5-3.6C91.141,826.066,91.074,825.662,91,825.258Zm10.512-6.074a5.158,5.158,0,1,0,5.22,5.173A5.212,5.212,0,0,0,101.512,819.184Z" transform="translate(-91 -814)"></path>
+	</symbol>
+  </defs>
+</svg>
+	<div class="google-optimize-variant">
+		
+		<header class="header-main" role="banner">
+			<div class="page-wrapper">
+								<a class="header-logo-2016" href="../../index.htm">Manning Law Firm</a>
+
+				<div class="header-contact-wrapper">
+
+
+					<div class="text-message" data-hours="after" style="display: none;">
+						<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://manninglaw.com/wp-content/themes/manninglaw/library/svg/icon-text-bubble.svg"><noscript><img src="../../wp-content/themes/manninglaw/library/svg/icon-text-bubble.svg"></noscript>
+						<div>Text a Confidential Message or<br>Call to Speak With an Attorney<span><br>24 Hours a Day 7 Days a Week.</span></div>
+					</div>
+
+
+					<a class="contact-helper phone phone-link" data-phone="link" href="tel:919.834.3499">919.834.3499</a>
+
+
+					<span data-hours="during" class="contact-text"><span>Speak To An<br></span>Attorney Today!</span>
+
+				</div><!-- .header-contact-wrapper -->
+
+				<div class="mobile-nav-trigger-wrapper">
+					<div class="mobile-nav-trigger mobile-nav-trigger-contact">
+						<div class="flex-on-em">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.002" height="75.723" viewbox="0 0 80.002 75.723">
+  <defs>
+    <clippath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="80.002" height="75.723" fill="none"></rect>
+    </clippath>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+    <g id="Group_1" data-name="Group 1" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_1" data-name="Path 1" d="M13.626,79.03a6.9,6.9,0,0,1-.874-.054,4.837,4.837,0,0,1-2.286-.866,4.034,4.034,0,0,1-1.519-3.355c-.009-.7-.024-1.391-.04-2.085l-.117-5.948H6.443A6.451,6.451,0,0,1,0,60.278V21.256a6.45,6.45,0,0,1,6.443-6.443H61.519a6.45,6.45,0,0,1,6.443,6.443V60.278a6.451,6.451,0,0,1-6.443,6.444H31.12L20.966,75.537A17.634,17.634,0,0,1,17.6,77.994a8.587,8.587,0,0,1-3.973,1.036M6.443,17.489a3.772,3.772,0,0,0-3.767,3.767V60.278a3.772,3.772,0,0,0,3.767,3.768h4.973l.167,8.566c.016.7.031,1.4.04,2.108.012.92.347,1.173.457,1.256a2.265,2.265,0,0,0,1.019.347,5.57,5.57,0,0,0,3.254-.7,15.347,15.347,0,0,0,2.865-2.114l.044-.039,10.858-9.427h31.4a3.772,3.772,0,0,0,3.768-3.768V21.256a3.772,3.772,0,0,0-3.768-3.767Z" transform="translate(0 -3.307)" fill="#d9a229"></path>
+      <path id="Path_2" data-name="Path 2" d="M77.021,0H21.945A6.451,6.451,0,0,0,15.5,6.443V9.632h2.678V6.956h0V6.443a3.772,3.772,0,0,1,3.768-3.767H77.021a3.772,3.772,0,0,1,3.768,3.767V45.465a3.772,3.772,0,0,1-3.768,3.767H75.971V49.2H73.3v2.708h3.724a6.451,6.451,0,0,0,6.443-6.443V6.443A6.451,6.451,0,0,0,77.021,0" transform="translate(-3.461 0)" fill="#d9a229"></path>
+      <path id="Path_3" data-name="Path 3" d="M51.58,56.95H13.317a1.605,1.605,0,1,1,0-3.211H51.58a1.605,1.605,0,0,1,0,3.211" transform="translate(-2.615 -11.999)" fill="#d9a229"></path>
+      <path id="Path_4" data-name="Path 4" d="M59.874,39.726H13.318a1.605,1.605,0,1,1,0-3.211H59.874a1.605,1.605,0,1,1,0,3.211" transform="translate(-2.615 -8.153)" fill="#d9a229"></path>
+    </g>
+  </g>
+</svg>
+							Contact
+						</div>
+					</div>
+					<div class="mobile-nav-trigger mobile-nav-trigger-main">Menu</div>
+				</div><!-- .mobile-nav-trigger-wrapper -->
+
+				<nav class="header-nav header-nav-main" role="navigation">
+					<ul id="menu-main-menu" class="sf-menu"><li id="menu-item-4" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4"><a href="../../criminal-defense-raleigh/index.htm">Criminal<i class="subnav-trigger"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="../../criminal-defense-raleigh/sex-offenders/index.htm">Sex Offender Registry<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="../../criminal-defense-raleigh/child-abuse/index.htm">Child Abuse<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="../../criminal-defense-raleigh/murder/index.htm">Murder/Homicide<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="../../criminal-defense-raleigh/larceny-theft/index.htm">Larceny/Theft<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="../../criminal-defense-raleigh/drugs/index.htm">Drug Crimes<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="../../criminal-defense-raleigh/financial/index.htm">Financial &#038; White Collar Crime<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="../../criminal-defense-raleigh/kidnapping/index.htm">Kidnapping<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="../../criminal-defense-raleigh/domestic-violence/index.htm">Domestic Violence<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="../../criminal-defense-raleigh/assault/index.htm">Assault<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../../criminal-defense-raleigh/breaking-entering/index.htm">Breaking &#038; Entering<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="../../criminal-defense-raleigh/expungements/index.htm">Expungements<i class="subnav-trigger"></i></a></li>
+</ul>
+</li>
+<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-102"><a href="../../traffic-law-raleigh/index.htm">Traffic &#038; DWI<i class="subnav-trigger"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="../../traffic-law-raleigh/dwi/index.htm">DWI Defense Lawyer<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-466"><a href="../../traffic-law-raleigh/tickets/index.htm">Traffic &#038; Speeding Ticket Lawyer<i class="subnav-trigger"></i></a></li>
+</ul>
+</li>
+<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113"><a href="../../federal-crimes-raleigh/index.htm">Federal Crime<i class="subnav-trigger"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="../../federal-crimes-raleigh/conspiracy/index.htm">Conspiracy Lawyer<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="../../federal-crimes-raleigh/financial/index.htm">Financial Crimes Lawyer<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-359"><a href="../../federal-crimes-raleigh/grand-jury/index.htm">Grand Jury<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../../federal-crimes-raleigh/target-letters/index.htm">Target Letters<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-361"><a href="../../federal-crimes-raleigh/child-pornography/index.htm">Felony Child Pornography Attorney<i class="subnav-trigger"></i></a></li>
+</ul>
+</li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33"><a href="../../about/index.htm">Our Law Firm<i class="subnav-trigger"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-367"><a href="../../criminal-attorneys-raleigh/index.htm">Our Attorneys<i class="subnav-trigger"></i></a>
+	<ul class="sub-menu">
+		<li id="menu-item-580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580"><a href="../../criminal-attorneys-raleigh/thomas-c-manning/index.htm">Thomas C. Manning<i class="subnav-trigger"></i></a></li>
+		<li id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-579"><a href="../../criminal-attorneys-raleigh/t-taylor-manning/index.htm">T. Taylor Manning<i class="subnav-trigger"></i></a></li>
+		<li id="menu-item-1363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1363"><a href="../../criminal-attorneys-raleigh/clarke-s-martin/index.htm">Clarke S. Martin<i class="subnav-trigger"></i></a></li>
+	</ul>
+</li>
+	<li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-653"><a href="../../about/blog/index.htm">Blog<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-1391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1391"><a href="../../in-the-news/index.htm">In The News<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754"><a href="../../about/faqs/index.htm">FAQs<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-938"><a href="../../about/how-to-get-help/index.htm">How to Get Help<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-721"><a href="../../attorney-fees/index.htm">Financing<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-250"><a href="../../about/accreditations/index.htm">Accreditations<i class="subnav-trigger"></i></a></li>
+	<li id="menu-item-1119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"><a href="../../client-testimonials/index.htm">Client Testimonials<i class="subnav-trigger"></i></a></li>
+</ul>
+</li>
+<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="../../contact/index.htm">Contact Us<i class="subnav-trigger"></i></a></li>
+</ul>				</nav><!-- .header-nav-main -->
+
+				<nav class="header-nav header-nav-contact">
+										<ul>
+						<li><a class="nav-icon-email" href="../../contact/index.htm">Contact</a></li>
+						<li><a data-phone="link" class="nav-icon-call" href="tel:919.834.3499">Call</a></li>
+					</ul>
+				</nav><!-- .header-nav-contact -->
+
+			</div><!-- .page-wrapper -->
+		</header><!-- .header-main --><div class="body body-int">
+
+
+		<article id="post-1027" class="post-1027 post type-post status-publish format-standard hentry category-federal-crimes tag-id-theft tag-identity-theft" role="article" itemscope="" itemtype="https://schema.org/BlogPosting">
+
+			<header>
+				<div class="masthead-slider-wrapper">
+					<div class="masthead-slide masthead-slide1 masthead-int"></div>				</div>
+			</header>
+
+			<div class="page-wrapper main clearfix">
+				<div class="col-body col-body-single">
+
+						<p><a href="../../about/blog/index.htm" class="back-to-list">&laquo; Back To Blog Posts</a></p>
+
+						
+							<h1>How to Fight Identity Theft Accusations</h1>
+<p>Identity theft, also called identity fraud, is one of the most common forms of property crime in America and is classified as a felony in North Carolina.&nbsp;</p>
+
+
+
+<p>According to a <a href="https://247wallst.com/special-report/2019/04/24/states-with-the-most-and-least-identity-theft-2/2/"><strong>study by 24/7 Wall St.</strong></a> using identity theft data published by the Federal Trade Commission in the Consumer Sentinel Network, North Carolina has the15th highest identity theft rate in the nation.&nbsp;</p>
+
+
+
+<p>If you’ve been accused of identity theft in North Carolina, consult an experienced criminal defense attorney to help you prepare your case.</p>
+
+
+
+<h2 class="wp-block-heading">What Is Identity Theft?</h2>
+
+
+
+<p>Identity theft occurs when a person obtains another&#8217;s personal information without their consent and uses it to commit theft or fraud.&nbsp;</p>
+
+
+
+<p>Personal information includes:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Social security number</li>
+
+
+
+<li>Driver&#8217;s license or state identification number</li>
+
+
+
+<li>Checking or savings account number</li>
+
+
+
+<li>Credit or debit card number</li>
+
+
+
+<li>Password, personal identification number, or electronic signature</li>
+
+
+
+<li>Fingerprints or other biometric data</li>
+
+
+
+<li>Mother&#8217;s maiden name</li>
+
+
+
+<li>Any other identifying information that can be used to access a person&#8217;s financial accounts</li>
+</ul>
+
+
+
+<p>A person may “steal” another’s identity through credit card skimming, phishing attacks, dumpster diving, mail fraud and lost or stolen wallets. With this unlawfully obtained information, he or she can access a victim’s bank account or open new accounts in the victim’s name.</p>
+
+
+
+<h2 class="wp-block-heading">What Is Trafficking in Stolen Identities?</h2>
+
+
+
+<p>In North Carolina, it is also unlawful to sell, buy, or transfer identifying information for the purpose of committing identity theft or assisting someone in committing identity theft. For example, if a person buys a stolen driver’s license, he or she may be convicted for this crime.</p>
+
+
+
+<h2 class="wp-block-heading">How Are These Crimes Punished?</h2>
+
+
+
+<p>Under <a href="https://statelaws.findlaw.com/north-carolina-law/north-carolina-identity-theft-laws.html"><strong>North Carolina’s identity theft laws</strong></a>, identity theft and trafficking in stolen identities are charged as felonies. The sentence varies based on the severity of the crime and the defendant’s criminal record.</p>
+
+
+
+<p><em>Class G Felony</em></p>
+
+
+
+<p>Identity theft is an automatic Class G felony, punishable by 8 to 31 months in prison.&nbsp;</p>
+
+
+
+<p><em>Class F Felony</em></p>
+
+
+
+<p>If the victim suffers arrest, detention, or conviction as a result of the offense or the defendant possesses the identifying information of three or more people, the sentence is raised to a Class F felony, which carries a punishment of 10 to 14 months in prison.&nbsp;</p>
+
+
+
+<p><em>Class E Felony</em></p>
+
+
+
+<p>Trafficking in stolen identities is a Class E felony. The defendant faces 10 to 41 months in prison.</p>
+
+
+
+<p><em>Fines and Restitution</em></p>
+
+
+
+<p>A conviction for either property crime may result in a fine up to $50,000. In addition, North Carolina allows the victim to seek damages in civil court, in which case the defendant may be ordered to pay them restitution. </p>
+
+
+
+<h2 class="wp-block-heading">What Are the Next Steps?</h2>
+
+
+
+<p>Accusations of identity theft or trafficking in personal information are serious. A Federal Crime Lawyer can protect you. <a href="https://www.manninglaw.com/contact/"><strong>Contact Manning Law Firm</strong> </a>immediately to speak with an experienced criminal defense lawyer today.</p>
+
+						
+						
+					</div>
+
+					<div class="col-sidebar">
+					<aside class="sidebar clearfix">
+	
+	<form class="form sidebar-form" action="https://manninglaw.com/contact/" method="post">
+		<input type="text" name="breathing" value="">
+						<div class="page-wrapper">
+		    <div class="form-cta">Schedule a Free <span>Virtual Consultation</span> With an Attorney</div>
+		    <div class="form-row form-row-name">
+		        <label for="input-name-home">Name *</label>
+		        <input type="text" class="input-txt req" id="input-name-home" name="username">
+		    </div><!-- .form-row -->
+		    <div class="form-row form-row-phone">
+		        <label for="input-phone-home">Phone Number *</label>
+		        <input type="tel" class="input-txt req" id="input-phone-home" name="phone">
+		    </div><!-- .form-row -->
+		    <div class="form-row form-row-email">
+		        <label for="input-email-home">Email</label>
+		        <input type="email" class="input-txt" id="input-email-home" name="email">
+		    </div><!-- .form-row -->
+		    <div class="form-row form-row-comments">
+		        <label for="input-comments-home">How Can We Help You?</label>
+		        <textarea class="input-txt" id="input-comments-home" name="comments"></textarea>
+		    </div><!-- .form-row -->
+		    <div class="form-row form-row-expungement">
+		        <a href="../../expungement-qualification/index.htm" rrr="">Inquiring About Expungements?<br>Click Here!</a>
+		    </div>
+		    <div class="form-row form-row-submit">
+		        <script type="rocketlazyloadscript" data-rocket-src='https://www.google.com/recaptcha/api.js'></script>
+		        <div class="g-recaptcha" data-sitekey="6LdhU-QjAAAAAP_psjwV_ZJBurYSyUoZBJHY1UKS"></div>
+		        <button type="submit" class="btn btn-blue btn-submit">Submit &rsaquo;</button>
+		        <input type="hidden" name="submit" value="submit">
+		    </div><!-- .form-row -->
+		</div>
+			</form>
+</aside><!-- .sidebar -->
+	<div class="sidebar-vid">
+		<a href="//fast.wistia.net/embed/iframe/re4ivgo8bv?popover=true" class="wistia-popover[height=360,playerColor=7b796a,width=640]"><img width="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%200'%3E%3C/svg%3E" alt="Manning Law Firm Video" data-lazy-src="https://manninglaw.com/wp-content/themes/manninglaw/library/img/img-vid.png"><noscript><img width="300" src="../../wp-content/themes/manninglaw/library/img/img-vid.png" alt="Manning Law Firm Video"></noscript></a>
+<script type="rocketlazyloadscript" data-minify="1" charset="ISO-8859-1" data-rocket-src="https://manninglaw.com/wp-content/cache/min/1/assets/external/popover-v1.js?ver=1763756417" data-rocket-defer="" defer=""></script>
+	</div>				</div><!-- .col-sidebar -->
+
+				</div>
+				<div id="bio_box">
+    <div class="bio_box-container">
+                    <section class="bio-box">
+                <div class="bio-box-container">
+                    <div class="bio-box-image">
+                        <img fetchpriority="high" src='../../wp-content/uploads/2019/07/Taylor-Manning-Headshot.jpg' alt='Taylor Manning'>
+                    </div>
+                    <div class="bio-box-content">
+                    The content on this page was reviewed by Manning Law Firm, PLLC partner Taylor Manning. You can learn more about Taylor's experience and expertise on his <a href="https://www.manninglaw.com/criminal-attorneys-raleigh/t-taylor-manning/" aria-label="Open Taylor's bio page">bio page</a>.
+                    </div>
+                </div>
+            </section>
+        
+    </div>
+</div>				
+			</article></div>
+
+	<footer class="footer-main clearfix">
+	    
+	    <section class="home-section section-schedule clearfix">
+	        <div class="page-wrapper">
+	            <h3>Don't Wait! Speak To An Attorney Today.</h3>
+	            <div class="buttons">
+	                <a data-phone="link" href="tel:919.834.3499" class="btn btn-blue">Call at
+	                    919.834.3499</a>
+	                <a data-phone="link" href="sms:919.801.3267" class="btn btn-blue-dark text-us">24/7 Text Line
+	                    919.801.3267</a>
+	                <a href="../../contact/index.htm" class="btn btn-gray">Contact Us Today ›</a>
+	            </div>
+	        </div>
+	    </section>
+	    	    <div class="footer-body footer-body-home">
+	        <div class="page-wrapper clearfix">
+
+	            <section class="home-section home-section-footer home-section-footer-links">
+	                <a class="footer-logo-2016" href="../../index.htm">Manning Law Firm, PLLC</a>
+	                <div class="home-footer-location-info">
+	                    <ul class="social-icons">
+	                        <!--<li><a class="google" href="https://plus.google.com/116015495135932498217/posts" target="_blank">Google+</a></li>
+								<li><a class="bbb" href="http://www.bbb.org/raleigh-durham/business-reviews/attorneys/manning-law-firm-in-raleigh-nc-16412" target="_blank">BBB</a></li>-->
+	                    </ul>
+	                </div><!-- .home-footer-menu-wrapper -->
+	            </section><!-- .home-section-footer-links -->
+
+	            <section class="home-section home-section-footer home-section-footer-links">
+	                <h4 class="section-title">Our Law Practices</h4>
+	                <i></i>
+	                <div class="home-footer-menu-wrapper clearfix">
+	                    <div class="home-footer-menu-column home-footer-menu-column1">
+	                        <div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="home-footer-menu"><li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="../../criminal-defense-raleigh/index.htm">Criminal Defense Attorney</a></li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="../../traffic-law-raleigh/index.htm">Traffic &#038; DWI Defense</a></li>
+<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="../../federal-crimes-raleigh/index.htm">Federal Crime Defense</a></li>
+</ul></div>	                    </div>
+	                </div><!-- .home-footer-menu-wrapper -->
+	            </section><!-- .home-section-footer-links -->
+
+	            <section class="home-section home-section-footer home-section-footer-links">
+	                <h4 class="section-title">About Our Law Firm</h4>
+	                <i></i>
+	                <div class="home-footer-menu-wrapper clearfix">
+	                    <div class="home-footer-menu-column home-footer-menu-column2">
+	                        <div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="home-footer-menu"><li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-408"><a href="../../about/index.htm">Our Law Firm</a></li>
+<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a href="../../criminal-attorneys-raleigh/index.htm">Our Attorneys</a></li>
+<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-407"><a href="../../about/blog/index.htm">Our Blog</a></li>
+</ul></div>	                    </div>
+	                </div><!-- .home-footer-menu-wrapper -->
+	            </section><!-- .home-section-footer-links -->
+
+	            <section class="home-section home-section-footer home-section-footer-links clearfix">
+	                <div class="home-footer-location-info">
+	                    <ul class="home-section-footer-list">
+
+	                        <li class="phone-footer">
+	                            <a data-phone="link" href="tel:919.834.3499">919.834.3499</a>
+	                        </li>
+	                        <div>
+	                            <li>Manning Law Firm, PLLC</li>
+	                            <div>
+	                                <li>3509 Haworth Drive</li>
+	                                <li>Raleigh, North Carolina 27609</li>
+	                            </div>
+	                        </div>
+	                    </ul>
+	                    <script type="application/ld+json">
+	                    {
+	                        "@context": "https://schema.org",
+	                        "@type": "LegalService",
+	                        "image": "https://www.manninglaw.com/wp-content/uploads/2018/08/logo-manning-law.png",
+	                        "name": "Manning Law Firm",
+	                        "description": "Raleigh father-son law firm with over 40 years of criminal defense experience.",
+	                        "sameAs": "https://www.manninglaw.com/",
+	                        "priceRange": "$",
+	                        "alternateName": "Manning Law",
+	                        "address": {
+	                            "@type": "PostalAddress",
+	                            "streetAddress": "3509 Haworth Drive, Suite 207",
+	                            "addressLocality": "Raleigh",
+	                            "addressRegion": "NC",
+	                            "postalCode": "27609",
+	                            "addressCountry": "US"
+	                        },
+	                        "geo": {
+	                            "@type": "GeoCoordinates",
+	                            "latitude": 35.800700,
+	                            "longitude": -78.658235
+	                        },
+	                        "telephone": "+19198343499"
+	                    }
+	                    </script>
+	                    <script type="application/ld+json">
+	                    {
+	                        "@context": "https://schema.org/",
+	                        "@type": "Service",
+	                        "serviceType": "Legal Services",
+	                        "provider": {
+	                            "@type": "LegalService",
+	                            "name": "Manning Law Firm",
+	                            "image": "https://www.manninglaw.com/wp-content/uploads/2018/08/logo-manning-law.png",
+	                            "address": {
+	                                "@type": "PostalAddress",
+	                                "streetAddress": "3509 Haworth Drive, Suite 207",
+	                                "addressLocality": "Raleigh",
+	                                "addressRegion": "NC",
+	                                "postalCode": "27609",
+	                                "addressCountry": "US"
+	                            },
+	                            "priceRange": "$",
+	                            "telephone": "+19198343499"
+	                        },
+	                        "hasOfferCatalog": {
+	                            "@type": "OfferCatalog",
+	                            "name": "Legal Services",
+	                            "itemListElement": [{
+	                                "@type": "OfferCatalog",
+	                                "name": "Criminal Law",
+	                                "itemListElement": [{
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Child Abuse Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Expungements"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Sex Offender Registry Legal Services"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Murder/Homicide Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Larceny/Theft Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Drug Crimes Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Financial & White Collar Crime Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Kidnapping Legal Services"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Domestic Violence Legal Services"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Assult Legal Services"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Breaking & Entering Legal Services"
+	                                    }
+	                                }]
+	                            }, {
+	                                "@type": "OfferCatalog",
+	                                "name": "Traffic & DWI Legal Representation",
+	                                "itemListElement": [{
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "DWI Defense Law"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Traffic & Speeding Ticket Legal Representation"
+	                                    }
+	                                }]
+	                            }, {
+	                                "@type": "OfferCatalog",
+	                                "name": "Federal Criminal Defense Legal Representation",
+	                                "itemListElement": [{
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Conspiracy Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Federal Financial Crimes Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Grand Jury Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Target Letters Legal Representation"
+	                                    }
+	                                }, {
+	                                    "@type": "Offer",
+	                                    "itemOffered": {
+	                                        "@type": "Service",
+	                                        "name": "Felony Child Pornography Legal Representation"
+	                                    }
+	                                }]
+	                            }]
+	                        }
+	                    }
+	                    </script>
+	                    <script type="application/ld+json">
+	                    {
+	                        "@context": "https://schema.org/",
+	                        "@type": "Product",
+	                        "name": "Manning Law Firm",
+	                        "image": "https://www.manninglaw.com/wp-content/themes/manninglaw/library/img/logo-manning-law.png",
+	                        "description": "Manning Law Firm is a group of criminal defense attorneys in Raleigh with more than 40 years of experience in criminal defense we have handled countless cases, from DWIs to homicide, and a variety of charges in between. Manning Law Firm is prepared to stand by your side when you need it the most. Our skilled attorneys not only defend you inside the courtroom, but we also take the time to get to know both you — and your case",
+	                        "brand": {
+	                            "@type": "Brand",
+	                            "name": "Manning Law Firm"
+	                        },
+	                        "gtin13": "0",
+	                        "mpn": "0",
+	                        "sku": "0",
+	                        "offers": {
+	                            "@type": "Offer",
+	                            "url": "https://www.manninglaw.com",
+	                            "priceCurrency": "USD",
+	                            "price": "0",
+	                            "priceValidUntil": "2022-06-30",
+	                            "availability": "https://schema.org/InStock",
+	                            "itemCondition": "https://schema.org/NewCondition"
+	                        },
+	                        "aggregateRating": {
+	                            "@type": "AggregateRating",
+	                            "ratingValue": "5",
+	                            "bestRating": "5",
+	                            "worstRating": "1",
+	                            "ratingCount": "7",
+	                            "reviewCount": "7"
+	                        },
+	                        "review": [{
+	                            "@type": "Review",
+	                            "name": "Best Lawyer",
+	                            "reviewBody": "Never have I given a review of another lawyer; however, Mr. Thomas Manning is a giant among giants.  I am honored to have been co-counsel in a murder trial with him.  From the beginning to the end and beyond, he is an excellent scholar,  consummate gentleman, and a pantomath of the legal profession.  There is no one I would place higher for his dedication to justice and love for the law. My ultimate question of confidence is, 'would you recommend him to a friend?'  Yes, every day and twice on Sundays",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-09-13",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Allen Swaim"
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "This man knows his stuff",
+	                            "reviewBody": "The man knows his stuff. I should be in prison serving 10 years, but he was very determined to help out and I am extremely satisfied I hope I won't ever need him again but if I do he's got my business no doubt.",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-06-06",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Tone F."
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "High Level of Service",
+	                            "reviewBody": "I am always pleased with the promptness of turn around time, high level of service, and communication!  This was out third experience using Manning Law Firm. We were extremely happy with the work that was performed.  I would recommend this firm to any members of my family and freind",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-05-23",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Brain FINC"
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "Experienced in all legal issues",
+	                            "reviewBody": "Experienced, Competent representation covering all legal issues",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-09-06",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Andy Haroon"
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "Amazing Service",
+	                            "reviewBody": "First rate lawyers who'll put on the gloves for you.",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-06-10",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Walter Mcdougal"
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "All promises fulfilled",
+	                            "reviewBody": "Taylor helped me and my wife through a tough situation and he did everything he promised",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2019-05-12",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Raynor Smith"
+	                            }
+	                        }, {
+	                            "@type": "Review",
+	                            "name": "Great Service",
+	                            "reviewBody": "Great Staff and lawyers willing to help",
+	                            "reviewRating": {
+	                                "@type": "Rating",
+	                                "ratingValue": "5",
+	                                "bestRating": "5",
+	                                "worstRating": "1"
+	                            },
+	                            "datePublished": "2017-08-16",
+	                            "author": {
+	                                "@type": "Person",
+	                                "name": "Joel Suplee"
+	                            }
+	                        }]
+	                    }
+	                    </script>
+
+	                    
+	                    
+	                    
+	                    
+	                    
+	                    
+	                    
+	                    
+	                    	                </div><!-- .home-footer-menu-wrapper -->
+	            </section><!-- .home-section-footer-links -->
+
+	        </div><!-- .page-wrapper -->
+	    </div><!-- .footer-body -->
+
+	    <div class="disclaimer">
+	        <div class="page-wrapper clearfix">
+	            <div class="disclaimer-text">
+	                <span>Disclaimer:</span> This web site is designed for general information only. The information
+	                presented at this site should not be construed to be formal legal advice nor the formation of a
+	                lawyer/client relationship.
+	            </div>
+	            <div class="law-firm-profiles">
+	                <a title="Lawyers.com" href="http://www.lawyers.com/raleigh/north-carolina/manning-law-firm-46284683-f/" target="_blank"><img src="../../wp-content/themes/manninglaw/library/img/lawyers-com-logo.png" alt="Lawyers.com Law Firm Profile"></a>
+	                <a title="Martindale.com" href="https://www.martindale.com/organization/manning-law-firm-31856355/raleigh-north-carolina-46284683-f/" target="_blank"><img src="../../wp-content/themes/manninglaw/library/img/martindale-com-logo.png" alt="Martindale.com Law Firm Profile"></a>
+	            </div>
+	        </div><!-- .page-wrapper -->
+	    </div><!-- .disclaimer -->
+	    <div class="footer-credits-bar">
+	        <div class="page-wrapper clearfix">
+	            <div class="credits-copyright-wrapper">
+	                <div class="copyright">
+	                    &copy; 2025 Manning Law Firm, PLLC | <a href="../../privacy-policy/index.htm">Privacy
+	                        Policy</a><br>
+
+	                </div>
+	                <div class="trimark-info">
+	                    <a href="https://thesspagency.com">Law Firm Marketing &amp; Web Design</a> By&nbsp;
+	                    <a href="https://thesspagency.com">SSP Agency</a>
+	                </div>
+	            </div><!-- .credits-copyright-wrapper -->
+	        </div><!-- .page-wrapper -->
+	    </div><!-- .footer-credits-bar -->
+
+	</footer>
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/manninglaw\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://manninglaw.com/wp-content/cache/min/1/wp-content/themes/manninglaw/library/js/plugins.js?ver=1763756417" id="bones-js-plugins-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://manninglaw.com/wp-content/cache/min/1/wp-content/themes/manninglaw/library/js/scripts.js?ver=1763756417" id="bones-js-scripts-js" data-rocket-defer="" defer=""></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="../../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+	<!-- Crazy egg -->
+	<!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/0984.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script> -->
+	</div>
+	</body>
+
+	</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1764243474 --></html>
